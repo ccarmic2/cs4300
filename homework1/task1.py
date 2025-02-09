@@ -1,5 +1,3 @@
-import pytest
-
 def task():
     print("Hello, World!")
 

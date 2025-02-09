@@ -1,4 +1,4 @@
-some_books = [
+SOME_BOOKS = [
     ('The Road', 'Cormac MacCarthy'),
     ('Frankenstein', 'Mary Shelley'),
     ('The Great Gatsby', 'F. Scott Fitzgerald'),
@@ -6,20 +6,22 @@ some_books = [
     ('Dagon', 'H.P. Lovecraft')
 ]
 
-student_db = {
+STUDENT_IDS = {
     "Alice": 1001,
     "Bob": 1002,
     "Charlie": 1003
 }
 
-print(some_books[0:3])
+print(SOME_BOOKS[0:3])
 
-def test_structures():
-    assert type(some_books) is list
-    assert len(some_books[0:3]) == 3
-    assert some_books[0:3] == [('The Road', 'Cormac MacCarthy'), 
+def test_list():
+    assert type(SOME_BOOKS) is list
+    assert len(SOME_BOOKS[0:3]) == 3
+    assert SOME_BOOKS[0:3] == [('The Road', 'Cormac MacCarthy'), 
                                ('Frankenstein', 'Mary Shelley'), 
                                ('The Great Gatsby', 'F. Scott Fitzgerald')]
-    assert type(student_db) is dict
-    assert student_db['Bob'] == 1002
+
+def test_dict():
+    assert type(STUDENT_IDS) is dict
+    assert STUDENT_IDS['Bob'] == 1002
 

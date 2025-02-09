@@ -1,5 +1,3 @@
-import pytest
-
 def check_num(x):
     if x > 0: 
         return '+'
@@ -20,7 +18,7 @@ def first_ten_prime():
     i = 0
     for i in range(10):
         num += 1
-        while is_prime(num) == False:
+        while not is_prime(num):
             num += 1
         primes.append(num)
     return primes
